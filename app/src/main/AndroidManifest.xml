@@ -15,7 +15,11 @@
         <activity
             android:name=".ImageCardActivity"
             android:exported="true"
-            android:label="@string/title_activity_image_card"
+            android:theme="@style/Theme.JetPackIntro" />
+
+        <activity
+            android:name=".RowColumnActivity"
+            android:exported="true"
             android:theme="@style/Theme.JetPackIntro">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,21 +27,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".RowColumnActivity"
-            android:exported="true"
-            android:label="@string/title_activity_row_column"
-            android:theme="@style/Theme.JetPackIntro" />
+
         <activity
             android:name=".MainActivity2"
             android:exported="true"
-            android:label="@string/title_activity_main2"
             android:theme="@style/Theme.JetPackIntro" />
 
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:label="@string/app_name"
             android:theme="@style/Theme.JetPackIntro" />
     </application>
 

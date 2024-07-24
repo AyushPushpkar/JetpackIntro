@@ -64,25 +64,24 @@ fun ImageCard(
     Card(
         modifier = Modifier.fillMaxWidth() ,
         shape = RoundedCornerShape(17.dp) ,
-        elevation = CardDefaults.cardElevation(5.dp)
+        elevation = CardDefaults.elevatedCardElevation(10.dp)
     ){
         Box (modifier = Modifier.height(200.dp)){
             Image(painter = painter , contentDescription = contentDes , contentScale = ContentScale.Crop)
 
             Box (
-                modifier = Modifier.fillMaxSize()
-                .background(
-                    brush = Brush.verticalGradient(
-                        colors = listOf(
-                            Color.Transparent ,
-                            Color.Black
-                        ) ,
-                        startY = 200f
+                modifier = Modifier
+                    .fillMaxSize()
+                    .background(
+                        brush = Brush.verticalGradient(
+                            colors = listOf(
+                                Color.Transparent,
+                                Color.Black
+                            ),
+                            startY = 200f
+                        )
                     )
-                )
-            ){
-
-            }
+            ){}
 
             Box (
                 modifier = Modifier
@@ -90,7 +89,7 @@ fun ImageCard(
                     .padding(12.dp),
                 contentAlignment = Alignment.BottomStart
             ){
-                Text(title , style = TextStyle(color = Color.White , fontSize = 16.sp))
+                Text(text = title , style = TextStyle(color = Color.White , fontSize = 16.sp))
             }
         }
     }

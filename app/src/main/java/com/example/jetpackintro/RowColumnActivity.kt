@@ -15,13 +15,32 @@ import androidx.compose.material3.Text
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.SpanStyle
+import androidx.compose.ui.text.buildAnnotatedString
+import androidx.compose.ui.text.font.Font
+import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.text.font.FontStyle
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.text.style.TextDecoration
+import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.example.jetpackintro.ui.theme.Pink
 
 class RowColumnActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+        val fontFamily= FontFamily(
+            Font(R.font.oswald_light , FontWeight.Light) ,
+            Font(R.font.oswald_extralight , FontWeight.ExtraLight) ,
+            Font(R.font.oswald_bold , FontWeight.Bold) ,
+            Font(R.font.oswald_regular , FontWeight.Normal) ,
+            Font(R.font.oswald_medium , FontWeight.Medium) ,
+            Font(R.font.oswald_semibold, FontWeight.SemiBold)
+        )
+
         setContent {
 
             Column(
@@ -43,7 +62,35 @@ class RowColumnActivity : ComponentActivity() {
                     Text(text = "JetPack")
                     Text(text = "Compose")
                 }
-                Text(text = "Beginner")
+                Text(
+                    text = buildAnnotatedString {
+                        withStyle(
+                            style = SpanStyle(
+                                color = Color.DarkGray,
+                                fontSize = 25.sp
+                            )
+                        ){
+                            append("Great ")
+                        }
+                        append("Power\n")
+                        append("Great ")
+                        withStyle(
+                            style = SpanStyle(
+                                color = Color.DarkGray,
+                                fontSize = 25.sp
+                            )
+                        ){
+                            append("Responsibility")
+                        }
+                    } ,
+                    color = Color.White,
+                    fontSize = 25.sp,
+                    fontFamily = fontFamily ,
+                    fontWeight = FontWeight.Bold ,
+                    fontStyle = FontStyle.Normal ,
+                    textAlign = TextAlign.Center ,
+                    textDecoration = TextDecoration.Underline
+                )
             }
         }
     }

@@ -50,12 +50,12 @@ class MainActivity2 : ComponentActivity() {
                 Text(text = "Compose")
                 Text("Modifiers" ,
                     modifier = Modifier
-                        .offset(y = 20.dp)
+                        .offset(y = 20.dp) //won't push other elements  like margin
                         .clickable {  }
                         .background(Jade)
                         .border(2.dp ,Color.Cyan)
                         .padding(10.dp)
-                        )  //won't push other elements  like margin
+                        )
             }
         }
     }
