@@ -44,7 +44,7 @@ class MainActivity2 : ComponentActivity() {
                 Column(
                     modifier = Modifier
                         .background(Pink)
-                        .fillMaxHeight(0.8f)
+                        .fillMaxHeight(0.6f)
                         .fillMaxWidth()
 //                    .requiredWidth(600.dp)
                         .padding(10.dp)
@@ -63,14 +63,51 @@ class MainActivity2 : ComponentActivity() {
                             .padding(10.dp)
                     )
                 }
-                Colorbox(
-                    modifier = Modifier.fillMaxSize()
-                )
+                val color = remember {
+                    mutableStateOf(Color.Cyan)
+                }
+                Colorbox2(
+                    modifier = Modifier
+                        .weight(1f)
+                        .fillMaxSize()
+                ){
+                    color.value = it
+                }
+                Box(
+                    modifier = Modifier
+                        .background(color.value)
+                        .weight(1f)
+                        .fillMaxSize()
+                ) {}
             }
         }
     }
 
     private fun enableEdgeToEdge() {}
+}
+
+@Composable
+fun Colorbox2(
+    modifier: Modifier = Modifier ,
+    updateColor: (Color) -> Unit
+){
+
+    Box (
+        modifier = modifier
+            .background(Color.DarkGray)
+            .clickable {
+                updateColor(
+                    Color(
+                        Random.nextFloat(),
+                        Random.nextFloat(),
+                        Random.nextFloat(),
+                        1f   // opacity
+                    )
+                )
+            }
+    ){
+
+    }
 }
 
 @Composable
