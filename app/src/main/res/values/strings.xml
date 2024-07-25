@@ -2,6 +2,7 @@
     <string name="app_name">JetPack Intro</string>
     <string name="title_activity_button_text_field.">ButtonTextField.Activity</string>
     <string name="title_activity_buttons">ButtonsActivity</string>
+    <string name="title_activity_list">ListActivity</string>
     <!--    <string name="title_activity_main2">MainActivity2</string>-->
     <!--    <string name="title_activity_row_column">RowColumnActivity</string>-->
     <!--    <string name="title_activity_image_card">ImageCardActivity</string>-->
