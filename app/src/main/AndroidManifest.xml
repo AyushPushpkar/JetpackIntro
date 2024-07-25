@@ -13,9 +13,9 @@
         android:theme="@style/Theme.JetPackIntro"
         tools:targetApi="31">
         <activity
-            android:name=".ListActivity"
+            android:name=".ConstraintLayoutActivity"
             android:exported="true"
-            android:label="@string/title_activity_list"
+            android:label="@string/title_activity_constraint_layout"
             android:theme="@style/Theme.JetPackIntro">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,11 +25,14 @@
         </activity>
 
         <activity
-            android:name=".ButtonsActivity"
+            android:name=".ListActivity"
             android:exported="true"
-            android:label="@string/title_activity_buttons"
             android:theme="@style/Theme.JetPackIntro" />
 
+        <activity
+            android:name=".ButtonsActivity"
+            android:exported="true"
+            android:theme="@style/Theme.JetPackIntro" />
         <activity
             android:name=".ImageCardActivity"
             android:exported="true"

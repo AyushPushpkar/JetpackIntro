@@ -52,7 +52,7 @@ class ListActivity : ComponentActivity() {
                             fontWeight = FontWeight.SemiBold,
                             modifier = Modifier
                                 .fillMaxWidth()
-                                .padding(vertical = 24.dp)
+                                .padding(vertical = 15.dp)
                         )
                     }
                 }
@@ -72,7 +72,7 @@ class ListActivity : ComponentActivity() {
                             fontWeight = FontWeight.SemiBold,
                             modifier = Modifier
                                 .fillMaxWidth()
-                                .padding(vertical = 24.dp)
+                                .padding(vertical = 15.dp)
                         )
                     }
 
