@@ -38,7 +38,7 @@ class ButtonsActivity : ComponentActivity() {
             //represent some part of ui
             val snackbarHostState = remember { SnackbarHostState() }
             var textFieldState by remember {
-                mutableStateOf("")            // by default no state
+                mutableStateOf("")            // by default no text
             }
             Scaffold(                        //provide a layout -> used for snackbar , nav drawer , toolbar ,etc (material component)
                 modifier = Modifier.fillMaxSize(),
@@ -47,18 +47,19 @@ class ButtonsActivity : ComponentActivity() {
                         hostState = snackbarHostState
                     )
                 }
-            ) { paddingValues ->
+            ) {
                 Column (
                     modifier = Modifier
                         .fillMaxSize()
-                        .padding(paddingValues)
+                        .padding(it)
                         .padding(30.dp) ,
                     horizontalAlignment = Alignment.CenterHorizontally ,
                     verticalArrangement = Arrangement.Center
                 ){
                     TextField(value = textFieldState,                 //link textfield to a state
                         label = { Text(text = "Enter your name") },
-                        onValueChange = { textFieldState = it } ,   // func gives string it with which update the textfieldstate
+                        onValueChange = {
+                            textFieldState = it } ,   // func gives a new string , with which update the textfieldstate
                         singleLine = true ,
                         modifier = Modifier.fillMaxWidth()
                     ) 
