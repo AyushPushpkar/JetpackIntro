@@ -8,6 +8,7 @@ import androidx.compose.animation.animateColor
 import androidx.compose.animation.core.FastOutSlowInEasing
 import androidx.compose.animation.core.InfiniteRepeatableSpec
 import androidx.compose.animation.core.LinearEasing
+import androidx.compose.animation.core.RepeatMode
 import androidx.compose.animation.core.Spring
 import androidx.compose.animation.core.animateDpAsState
 import androidx.compose.animation.core.keyframes
@@ -47,7 +48,7 @@ class SimpleAnimActivity : ComponentActivity() {
                 tween(
                     durationMillis = 3000 ,
                     delayMillis = 100 , // anim delay
-                    easing = androidx.compose.animation.core.FastOutSlowInEasing
+                    easing = FastOutSlowInEasing
                 ), label = ""
 //                spring(
 //                    Spring.DampingRatioHighBouncy ,
@@ -67,7 +68,7 @@ class SimpleAnimActivity : ComponentActivity() {
                 targetValue = Color.Green,
                 animationSpec = InfiniteRepeatableSpec(
                     tween(durationMillis = 2000),
-                    repeatMode = androidx.compose.animation.core.RepeatMode.Reverse
+                    repeatMode = RepeatMode.Reverse
                 ),
                 label = ""
             )
