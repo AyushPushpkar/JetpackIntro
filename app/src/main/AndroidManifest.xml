@@ -13,21 +13,25 @@
         android:theme="@style/Theme.JetPackIntro"
         tools:targetApi="31">
         <activity
-            android:name=".MusicKnobActivity"
+            android:name=".TimerActivity"
             android:exported="true"
             android:theme="@style/Theme.JetPackIntro">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-    </activity>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MusicKnobActivity"
+            android:exported="true"
+            android:theme="@style/Theme.JetPackIntro" />
 
         <activity
             android:name=".CircularProgressBarActivity"
             android:exported="true"
             android:theme="@style/Theme.JetPackIntro" />
-
         <activity
             android:name=".SimpleAnimActivity"
             android:exported="true"

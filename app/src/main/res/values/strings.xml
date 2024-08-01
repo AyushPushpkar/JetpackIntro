@@ -8,6 +8,7 @@
     <string name="title_activity_simple_anim">SimpleAnimActivity</string>
     <string name="title_activity_circular_progress_bar">CircularProgressBarActivity</string>
     <string name="title_activity_music_knob">MusicKnobActivity</string>
+    <string name="title_activity_timer">TimerActivity</string>
     <!--    <string name="title_activity_main2">MainActivity2</string>-->
     <!--    <string name="title_activity_row_column">RowColumnActivity</string>-->
     <!--    <string name="title_activity_image_card">ImageCardActivity</string>-->

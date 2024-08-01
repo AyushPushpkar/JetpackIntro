@@ -49,7 +49,7 @@ class MusicKnobActivity : ComponentActivity() {
             Box(
                 modifier = Modifier
                     .fillMaxSize()
-                    .background(Pink)
+                    .background(Color.Black)
                     .padding(10.dp),
                 contentAlignment = Alignment.Center
             ){
@@ -81,6 +81,8 @@ class MusicKnobActivity : ComponentActivity() {
                 }
             }
         }
+
+        window.statusBarColor = android.graphics.Color.GREEN
     }
 
     private fun enableEdgeToEdge() {}
@@ -90,7 +92,7 @@ class MusicKnobActivity : ComponentActivity() {
 @Composable
 fun MusicKnob(
     modifier: Modifier = Modifier,
-    limitingAngle : Float = 25f,
+    limitingAngle : Float = 50f,
     onValueChange : (Float) -> Unit  // the % value the knob is currently rotated to
 ){
     var rotation by remember {             // current rotation of music knob
