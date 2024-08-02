@@ -12,6 +12,7 @@
     <string name="title_activity_dropdown">DropdownActivity</string>
     <string name="title_activity_navigation">NavigationActivity</string>
     <string name="title_activity_ani_splash">AniSplashActivity</string>
+    <string name="title_activity_multi_select_lazy_column">MultiSelectLazyColumnActivity</string>
     <!--    <string name="title_activity_main2">MainActivity2</string>-->
     <!--    <string name="title_activity_row_column">RowColumnActivity</string>-->
     <!--    <string name="title_activity_image_card">ImageCardActivity</string>-->
