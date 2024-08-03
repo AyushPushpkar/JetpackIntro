@@ -31,6 +31,7 @@ import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
+import androidx.core.content.ContextCompat
 import com.example.jetpackintro.ui.theme.JetPackIntroTheme
 
 class ParallaxScrollActivity : ComponentActivity() {
@@ -87,7 +88,7 @@ class ParallaxScrollActivity : ComponentActivity() {
                             modifier = Modifier
                                 .clipToBounds()
                                 .fillMaxWidth()
-                                .height(imageHeight + midBgOffset.toDp())
+                                .height(imageHeight + midBgOffset.toDp()/5f)
                                 .background(
                                     Brush.verticalGradient(
                                         listOf(
@@ -136,7 +137,9 @@ class ParallaxScrollActivity : ComponentActivity() {
                 }
             }
         }
+        window.statusBarColor = (0xFFf36b21).toInt()
     }
+    private fun enableEdgeToEdge(){}
 
     private fun Float.toDp() : Dp {
         return (this/ Resources.getSystem().displayMetrics.density).dp
