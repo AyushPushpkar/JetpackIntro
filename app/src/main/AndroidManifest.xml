@@ -13,7 +13,7 @@
         android:theme="@style/Theme.JetPackIntro"
         tools:targetApi="31">
         <activity
-            android:name=".MultiSelectLazyColumnActivity"
+            android:name=".BottomNavActivity"
             android:exported="true"
             android:theme="@style/Theme.JetPackIntro" >
             <intent-filter>
@@ -22,12 +22,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MultiSelectLazyColumnActivity"
+            android:exported="true"
+            android:theme="@style/Theme.JetPackIntro"/>
 
         <activity
             android:name=".AniSplashActivity"
             android:exported="true"
-            android:theme="@style/Theme.JetPackIntro"/>
-
+            android:theme="@style/Theme.JetPackIntro" />
         <activity
             android:name=".NavigationActivity"
             android:exported="true"
