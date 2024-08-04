@@ -20,21 +20,24 @@
         android:theme="@style/Theme.JetPackIntro"
         tools:targetApi="31">
         <activity
+            android:name=".CleanThemingActivity"
+            android:exported="false"
+            android:label="@string/title_activity_clean_theming"
+            android:theme="@style/Theme.JetPackIntro" />
+        <activity
             android:name=".PermissionActivity"
             android:exported="true"
-            android:theme="@style/Theme.JetPackIntro" >
+            android:theme="@style/Theme.JetPackIntro">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".NewNavActivity"
             android:exported="true"
-            android:theme="@style/Theme.JetPackIntro"/>
-
+            android:theme="@style/Theme.JetPackIntro" />
         <activity
             android:name=".ParallaxScrollActivity"
             android:exported="true"
