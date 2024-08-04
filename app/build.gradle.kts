@@ -97,4 +97,6 @@ dependencies {
     implementation(libs.compose.destinations.core)
     ksp(libs.compose.destinations.ksp)
 
+    implementation("com.google.accompanist:accompanist-permissions:0.35.1-alpha")
+
 }
