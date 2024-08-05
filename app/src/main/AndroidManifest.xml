@@ -20,15 +20,20 @@
         android:theme="@style/Theme.JetPackIntro"
         tools:targetApi="31">
         <activity
-            android:name=".ScreenSizesActivity"
-            android:exported="true"
-            android:theme="@style/Theme.JetPackIntro" >
+            android:name=".MigrationActivity"
+            android:theme="@style/YourAppCompatTheme"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".ScreenSizesActivity"
+            android:exported="true"
+            android:theme="@style/Theme.JetPackIntro"/>
 
         <activity
             android:name=".CleanThemingActivity"
@@ -38,7 +43,6 @@
             android:name=".PermissionActivity"
             android:exported="true"
             android:theme="@style/Theme.JetPackIntro" />
-
         <activity
             android:name=".NewNavActivity"
             android:exported="true"
