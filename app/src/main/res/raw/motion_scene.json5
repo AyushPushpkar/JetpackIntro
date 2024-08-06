@@ -2,10 +2,13 @@
   ConstraintSets : {
     start : {
       profile_pic : {
-        width: 40,
-        height : 40 ,
+        width: 50,
+        height : 50 ,
         start: ['parent','start' , 16],
         top: ['parent', 'top', 16],
+        custom : {
+          background : "#08ff04"
+        }
       },
       username : {
         bottom: ['profile_pic', 'bottom'],
@@ -28,6 +31,9 @@
         start: ['parent','start' ],
         end: ['parent', 'end'],
         top: ['parent', 'top', 16],
+        custom : {
+          background : "#FFDD5207"
+        }
       },
       username : {
         top: ['profile_pic', 'bottom' , 16],
@@ -50,11 +56,17 @@
       to: 'end',
       pathMotionArc: 'startHorizontal',
       KeyFrames: {
-        KeyAttributes: [{
-          target: ['profile_pic'],
-          frames: [0,100],
-//          translationX: [50, 0],
-        }],
+        KeyAttributes: [
+          {
+            target: ['profile_pic'],
+            frames: [0,100],
+          },
+          {
+            target: ['username'],
+            frames: [0,50,100],
+            translationX: [0, 120, 0],
+          }
+        ],
       }
     }
   }
