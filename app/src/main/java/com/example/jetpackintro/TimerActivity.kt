@@ -52,7 +52,7 @@ class TimerActivity : ComponentActivity() {
                         handleColor = Color.Green,
                         inactiveBarColor = Color.DarkGray ,
                         activeBarColor = Color(0xFF378900) ,
-                        modifier = Modifier.size(200.dp)
+                        modifier = Modifier.size(200.dp) ,
                     )
                 }
             }
