@@ -20,6 +20,7 @@
     <string name="title_activity_permission">PermissionActivity</string>
     <string name="title_activity_clean_theming">CleanThemingActivity</string>
     <string name="title_activity_screen_sizes">ScreenSizesActivity</string>
+    <string name="title_activity_nav_drawer">NavDrawerActivity</string>
     <!--    <string name="title_activity_main2">MainActivity2</string>-->
     <!--    <string name="title_activity_row_column">RowColumnActivity</string>-->
     <!--    <string name="title_activity_image_card">ImageCardActivity</string>-->
