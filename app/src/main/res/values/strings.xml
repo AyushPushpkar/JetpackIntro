@@ -22,6 +22,7 @@
     <string name="title_activity_screen_sizes">ScreenSizesActivity</string>
     <string name="title_activity_nav_drawer">NavDrawerActivity</string>
     <string name="title_activity_complex_anim">ComplexAnimActivity</string>
+    <string name="title_activity_lazy_grid">LazyGridActivity</string>
     <!--    <string name="title_activity_main2">MainActivity2</string>-->
     <!--    <string name="title_activity_row_column">RowColumnActivity</string>-->
     <!--    <string name="title_activity_image_card">ImageCardActivity</string>-->

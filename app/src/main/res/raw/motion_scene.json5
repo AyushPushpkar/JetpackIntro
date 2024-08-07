@@ -63,8 +63,8 @@
           },
           {
             target: ['username'],
-            frames: [0,50,100],
-            translationX: [0, 120, 0],
+            frames: [0,30,70,100],
+            translationX: [0,120 , 120, 0],
           }
         ],
       }
