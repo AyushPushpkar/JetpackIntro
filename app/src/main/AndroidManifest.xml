@@ -20,7 +20,7 @@
         android:theme="@style/Theme.JetPackIntro"
         tools:targetApi="31">
         <activity
-            android:name=".LazyGridActivity"
+            android:name=".BottomSheetActivity"
             android:exported="true"
             android:theme="@style/Theme.JetPackIntro" >
             <intent-filter>
@@ -31,10 +31,14 @@
         </activity>
 
         <activity
+            android:name=".LazyGridActivity"
+            android:exported="true"
+            android:theme="@style/Theme.JetPackIntro"/>
+
+        <activity
             android:name=".ComplexAnimActivity"
             android:exported="true"
             android:theme="@style/Theme.JetPackIntro" />
-
         <activity
             android:name=".NavDrawerActivity"
             android:exported="true"
