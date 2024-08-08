@@ -25,6 +25,7 @@
     <string name="title_activity_lazy_grid">LazyGridActivity</string>
     <string name="title_activity_bottom_sheet">BottomSheetActivity</string>
     <string name="title_activity_pagination">PaginationActivity</string>
+    <string name="title_activity_counter_text">CounterTextActivity</string>
     <!--    <string name="title_activity_main2">MainActivity2</string>-->
     <!--    <string name="title_activity_row_column">RowColumnActivity</string>-->
     <!--    <string name="title_activity_image_card">ImageCardActivity</string>-->
