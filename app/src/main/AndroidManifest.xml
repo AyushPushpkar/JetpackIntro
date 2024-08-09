@@ -20,21 +20,33 @@
         android:theme="@style/Theme.JetPackIntro"
         tools:targetApi="31">
         <activity
-            android:name=".CounterTextActivity"
+            android:name=".DeepLinkingActivity"
             android:exported="true"
-            android:theme="@style/Theme.JetPackIntro" >
+            android:theme="@style/Theme.JetPackIntro">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
 
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="https" />
+                <data android:host="ap-coding.com" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CounterTextActivity"
+            android:exported="true"
+            android:theme="@style/Theme.JetPackIntro"/>
         <activity
             android:name=".PaginationActivity"
             android:exported="true"
             android:theme="@style/Theme.JetPackIntro" />
-
         <activity
             android:name=".BottomSheetActivity"
             android:exported="true"
