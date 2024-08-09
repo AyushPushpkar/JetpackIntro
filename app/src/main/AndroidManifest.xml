@@ -20,15 +20,20 @@
         android:theme="@style/Theme.JetPackIntro"
         tools:targetApi="31">
         <activity
-            android:name=".DeepLinkingActivity"
+            android:name=".ShimmerEffectActivity"
             android:exported="true"
-            android:theme="@style/Theme.JetPackIntro">
+            android:theme="@style/Theme.JetPackIntro" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
+        </activity>
+        <activity
+            android:name=".DeepLinkingActivity"
+            android:exported="true"
+            android:theme="@style/Theme.JetPackIntro">
             <intent-filter android:autoVerify="true">
                 <action android:name="android.intent.action.VIEW" />
 
@@ -42,7 +47,7 @@
         <activity
             android:name=".CounterTextActivity"
             android:exported="true"
-            android:theme="@style/Theme.JetPackIntro"/>
+            android:theme="@style/Theme.JetPackIntro" />
         <activity
             android:name=".PaginationActivity"
             android:exported="true"
